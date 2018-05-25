@@ -1,2 +1,2 @@
-add_lunch_combo omni_pop35-userdebug
-add_lunch_combo omni_pop35-eng
+add_lunch_combo omni_pop4-userdebug
+add_lunch_combo omni_pop4-eng
