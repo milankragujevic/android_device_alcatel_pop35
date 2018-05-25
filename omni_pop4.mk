@@ -15,7 +15,7 @@
 #
 
 # Release name
-PRODUCT_RELEASE_NAME := pop35
+PRODUCT_RELEASE_NAME := pop4
 
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
@@ -28,10 +28,10 @@ PRODUCT_PACKAGES += \
 	charger
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := pop35
-PRODUCT_NAME := omni_pop35
+PRODUCT_DEVICE := pop4
+PRODUCT_NAME := omni_pop4
 PRODUCT_BRAND := Alcatel
-PRODUCT_MODEL := 5065D
+PRODUCT_MODEL := 5051D
 PRODUCT_MANUFACTURER := TCL
 
 PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
