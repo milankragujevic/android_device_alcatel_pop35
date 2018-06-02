@@ -17,7 +17,7 @@
 
 set -e
 
-DEVICE=pop35
+DEVICE=pop4
 VENDOR=alcatel
 
 # Load extractutils and do some sanity checks
