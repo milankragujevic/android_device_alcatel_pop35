@@ -16,7 +16,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),pop35)
+ifeq ($(TARGET_DEVICE),pop4)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
 include $(CLEAR_VARS)
@@ -87,7 +87,7 @@ ALL_DEFAULT_INSTALLED_MODULES += $(WV_SYMLINKS)
 
 # Symlinks
 $(shell mkdir -p $(TARGET_OUT_ETC)/firmware/wlan/prima; \
-    ln -sf /tctpersist/data/param/macaddr \
+    ln -sf /persist/data/param/macaddr \
     $(TARGET_OUT_ETC)/firmware/wlan/prima/macaddr; \
     ln -sf /persist/WCNSS_wlan_dictionary.dat \
     $(TARGET_OUT_ETC)/firmware/wlan/prima/WCNSS_wlan_dictionary.dat; \
