@@ -21,7 +21,7 @@
 #define SUCCESS 0
 #define FAILED -1
 
-#define MAC_INFO_FILE "/tctpersist/data/param/macaddr"
+#define MAC_INFO_FILE "/persist/wlan_mac.bin"
 
 #include <cutils/log.h>
 #include <stdio.h>
@@ -42,7 +42,7 @@ int wcnss_qmi_get_wlan_address(unsigned char *mac)
         return FAILED;
     }
 
-    if (fscanf(f, "%02x:%02x:%02x:%02x:%02x:%02x",
+    if (fscanf(f, "%c%c%c%c%c%c",
             &wifi_addr[0], &wifi_addr[1], &wifi_addr[2],
             &wifi_addr[3], &wifi_addr[4], &wifi_addr[5]) != 6) {
         ALOGE("%s: %s: file contents are not valid", __func__, MAC_INFO_FILE);
